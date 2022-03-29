@@ -19,7 +19,7 @@ class DataProvider
         $this->user = $user;
         $this->password = $password;
         //TODO данные с доступами я бы хранил в отдельном конфиге, к примеру configs/externalService.php
-        // в нем [ host=>localhost, user=> mainUser, password=>123 ] и получал бы доступ к ним через методы - хелперы
+        // в нем [ 'host'=>'localhost', 'user'=> 'mainUser', 'password'=>'123' ] и получал бы доступ к ним через методы - хелперы
         // к примеру use Support\Config Config::get('externalService.password'), таким образом мы бы избавились
         // от объявления лишних свойств в объекте DataProvider и переброску аргументов через дочерний класс DecoratorManager
     }
