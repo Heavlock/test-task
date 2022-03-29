@@ -65,7 +65,7 @@ class DecoratorManager extends DataProvider
             return $result;
         } catch (Exception $e) {
             $this->logger->critical('Error');
-            //TODO здесь бы я заменил вывод ссобщения 'error' на более понятное сообщение
+            //TODO здесь бы я заменил вывод собщения 'error' на более понятное сообщение
             // $this->logger->critical($e->getMessage());
             // или $this->logger->critical('ошибка подключения к external service');
         }
